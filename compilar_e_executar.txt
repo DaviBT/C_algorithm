@@ -1,0 +1,3 @@
+compilar: gcc *.c -o a.out
+
+rodar: ./a.out
