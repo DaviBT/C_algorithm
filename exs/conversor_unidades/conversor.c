@@ -2,6 +2,7 @@
 
 int main(){
     int escolha;
+    int conf = 1;
 
     do{
         // menu
@@ -14,15 +15,15 @@ int main(){
         scanf("%d", &escolha);
 
         switch (escolha)
-        {
-        case 1:
-            celsiusToF();
-            break;
-        
-        default:
-            break;
-        }
+            {
+            case 1:
+                celsiusToF();
+                break;
+            
+            default:
+                break;
+            }
     }
-
+    while(conf = 1);
 
 }
