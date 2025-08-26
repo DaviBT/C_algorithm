@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include"conversor.h"
 
 int menu(){
 
@@ -6,26 +8,26 @@ int menu(){
 
     do{
         // menu
-        printf("------MENU------");
+        printf("\n------MENU------");
         printf("Digite o número para fazer sua escolha: \n");
-        printf("1. Celsius para Fahrenheit");
-        printf("2. metros para km");
-        printf("3. segundos para minutos");
+        printf("1. Celsius para Fahrenheit \n");
+        printf("2. metros para km \n");
+        printf("3. segundos para minutos \n");
 
         scanf("%d", &escolha);
 
         switch (escolha)
             {
             case 1:
-                celsiusToF();
+                int celsiusToF();
                 break;
 
             case 2:
-                mTokm();
+                int mTokm();
                 break;
             
             case 3:
-                secToMin();
+                int secToMin();
                 break;
             
             default:
@@ -34,31 +36,42 @@ int menu(){
     }
     while(conf = 1);
 
+
+    return 0;
 }
 
-celsiusToF(){
+int celsiusToF(){
     int celsius;
+    int farenheit;
 
-    printf("digite o valor em Celsius: ");
+    printf("digite o valor em Celsius: \n");
     scanf("%d", &celsius);
 
-    return celsius * 32;
+    farenheit = celsius * 32;
+    printf("%d", &farenheit);
+    return 0;
 }
 
-mTokm(){
+int mTokm(){
     int m;
+    float km;
 
-    printf("digite o valor em metros: ");
+    printf("digite o valor em metros: \n");
     scanf("%d", &m);
 
-    return m / 1000;
+    km = m / 1000;
+    printf("%f", &km);
+    return 0;
 }
 
-secToMin(){
+int secToMin(){
     int s;
+    int minutes;
 
-    printf("digite o valor em segundos: ");
+    printf("digite o valor em segundos: \n");
     scanf("%d", &s);
 
-    return s * 60;
+    minutes = s * 60;
+    printf("%d", &minutes);
+    return 0;
 }
