@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "maior.h": "c"
+        "maior.h": "c",
+        "conversor.h": "c"
     }
 }
