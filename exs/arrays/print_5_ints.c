@@ -4,7 +4,7 @@ int main(){
     int tamanho = 5;
     int lista[tamanho];
     for(int x = 0; x < tamanho; x++){
-        printf("Digite o valor %d: ", x + 1);
+        printf("Digite um valor: \n");
         scanf("%d ", &lista[x]);
     }
 

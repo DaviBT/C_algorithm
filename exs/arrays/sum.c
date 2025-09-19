@@ -18,7 +18,7 @@ int main (){
     }
 
     printf("Soma de todos: %d \n", soma);
-    printf("Quantidade de positivos: %d", positivos);
+    printf("Quantidade de positivos: %d \n", positivos);
 
     return 0;
 }
