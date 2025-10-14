@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "maior.h": "c",
-        "conversor.h": "c"
+        "conversor.h": "c",
+        "random": "c",
+        "stdio.h": "c"
     }
 }
