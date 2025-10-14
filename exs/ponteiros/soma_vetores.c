@@ -8,6 +8,7 @@ int soma_vetores(int a[], int b[], int res[], int len){
     int *fa = a + len;
     int *ib = b;
     int *fb = b + len;
+    int *ires = res;
 
     int i = 0;
     int arraySoma[len];
@@ -15,14 +16,19 @@ int soma_vetores(int a[], int b[], int res[], int len){
 
     // supondo que o len e igual para ambos
     while(i < len){
-        int soma = *ia + *ib;
-        iArraySoma = soma;
+        *ires = *ia + *ib;
 
-        iArraySoma++;
+        *ires++;
+        *ia++;
+        *ib++;
+        i++;
     }
-    int *iteradorArraySoma = arraySoma;
-    while(iteradorArraySoma < len){
-        printf("O endereco de memoria desse elemento: %p  e seu valor: %d \n", (void*)iteradorArraySoma, *iteradorArraySoma);
+    int *iterador = res;
+    i = 0;
+    while(i < len){
+        printf("O endereco de memoria desse elemento: %p  e seu valor: %d \n", (void*)iterador, *iterador);
+        i++;
+        *iterador++;
     }
 }
 
